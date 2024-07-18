@@ -25,3 +25,35 @@ function calculateBMI(height, weight){
     console.log(bmi);
     return bmi
 }
+
+let metricRadio = document.querySelector("#metric");
+let imperialRadio = document.querySelector("#imperial");
+
+// change the unit when imperial or metric is selected
+function changeUnit(){
+    let heightUnit = document.querySelector("#height-unit");
+    let weightUnit = document.querySelector("#weight-unit");
+    console.log(heightUnit,weightUnit)
+
+    let metricStatus = metricRadio.checked;
+    let imperialStatus = imperialRadio.checked;
+
+    if(metricStatus){
+        heightUnit.innerText = "Meters(M)";
+        weightUnit.innerText = "Kilograms(Kg)";
+    }
+    else if(imperialStatus){
+        heightUnit.innerText = "Feet(ft)";
+        weightUnit.innerText = "Pounds(p)";
+    }
+    else{
+        console.log("unit went wrong...");
+    }
+
+}
+
+// add eventlistener to radio buttons
+
+
+metricRadio.addEventListener("click", changeUnit);
+imperialRadio.addEventListener("click", changeUnit);
