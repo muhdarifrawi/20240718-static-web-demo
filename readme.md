@@ -21,3 +21,7 @@
     d. TEST the `style.css` and `script.js`
     e. Import Bootstrap.
     f. TEST Bootstrap is working.
+
+4. Create a base for the inputs
+
+5. create the logic for the calculator

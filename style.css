@@ -1,3 +1,7 @@
 body{
     background-color: rgb(143, 141, 141);
 }
+
+#section-1{
+    height:100vh;
+}
